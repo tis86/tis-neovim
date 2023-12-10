@@ -1,9 +1,8 @@
 # tis-neovim/
 
-<a href="https://dotfyle.com/tis86/tis-neovim"><img src="https://dotfyle.com/tis86/tis-neovim/badges/plugins?style=flat" /></a>
-<a href="https://dotfyle.com/tis86/tis-neovim"><img src="https://dotfyle.com/tis86/tis-neovim/badges/leaderkey?style=flat" /></a>
-<a href="https://dotfyle.com/tis86/tis-neovim"><img src="https://dotfyle.com/tis86/tis-neovim/badges/plugin-manager?style=flat" /></a>
-
+<a href="https://dotfyle.com/tis86/tis-neovim"><img src="https://dotfyle.com/tis86/tis-neovim/badges/plugins?style=for-the-badge" /></a>
+<a href="https://dotfyle.com/tis86/tis-neovim"><img src="https://dotfyle.com/tis86/tis-neovim/badges/leaderkey?style=for-the-badge" /></a>
+<a href="https://dotfyle.com/tis86/tis-neovim"><img src="https://dotfyle.com/tis86/tis-neovim/badges/plugin-manager?style=for-the-badge" /></a>
 
 ## Install Instructions
 
@@ -30,18 +29,31 @@ NVIM_APPNAME=tis86/tis-neovim/ nvim
 ### comment
 
 + [numToStr/Comment.nvim](https://dotfyle.com/plugins/numToStr/Comment.nvim)
+### completion
+
++ [hrsh7th/nvim-cmp](https://dotfyle.com/plugins/hrsh7th/nvim-cmp)
 ### fuzzy-finder
 
 + [nvim-telescope/telescope.nvim](https://dotfyle.com/plugins/nvim-telescope/telescope.nvim)
+### lsp
+
++ [onsails/lspkind.nvim](https://dotfyle.com/plugins/onsails/lspkind.nvim)
 ### nvim-dev
 
 + [nvim-lua/plenary.nvim](https://dotfyle.com/plugins/nvim-lua/plenary.nvim)
 ### plugin-manager
 
 + [folke/lazy.nvim](https://dotfyle.com/plugins/folke/lazy.nvim)
+### snippet
+
++ [L3MON4D3/LuaSnip](https://dotfyle.com/plugins/L3MON4D3/LuaSnip)
++ [rafamadriz/friendly-snippets](https://dotfyle.com/plugins/rafamadriz/friendly-snippets)
 ### statusline
 
 + [nvim-lualine/lualine.nvim](https://dotfyle.com/plugins/nvim-lualine/lualine.nvim)
+### tabline
+
++ [akinsho/bufferline.nvim](https://dotfyle.com/plugins/akinsho/bufferline.nvim)
 ## Language Servers
 
 
