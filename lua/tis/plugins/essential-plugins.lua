@@ -1,7 +1,10 @@
 return {
     "tpope/vim-surround",
     "vim-scripts/ReplaceWithRegister",
-    { "numToStr/Comment.nvim", lazy = false },
+    { "numToStr/Comment.nvim", event = {
+        "BufReadPre", "BufNewFile" }, config = true, 
+        lazy = false 
+    },
     "szw/vim-maximizer",
 }
 
