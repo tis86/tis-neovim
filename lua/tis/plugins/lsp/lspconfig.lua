@@ -16,14 +16,14 @@ return {
     config = function()
         --import lspconfig plugin
         local lspconfig = require("lspconfig")
-
+        local util = require("lspconfig/util")
         --import cmp-nvim-lsp plugin
         local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
         local keymap = vim.keymap -- for conciseness
 
         local opts = { noremap = true, silent = true }
-        local on_attach = function(client, bufnr)
+        local on_attach = function(bufnr)
             opts.buffer = bufnr
 
             -- set keybinds
@@ -87,9 +87,15 @@ return {
         lspconfig["rust_analyzer"].setup({
             capabilities = capabilities,
             on_attach = on_attach,
---            cmd = {
-  --              "rustup", "run", "stable", "rust-analyzer",
-    --        }
+            filetypes = {"rust"},
+            root_dir = util.root_pattern("Cargo.toml"),
+            settings = {
+                ["rust-analyzer"] = {
+                    cargo = {
+                        allFeatures = true,
+                    },
+                },
+            },
         })
 
         -- configure lua server

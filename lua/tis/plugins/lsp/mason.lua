@@ -27,8 +27,8 @@ return {
         mason_lspconfig.setup({
         -- list of servers for mason to install
             ensure_installed = {
-                --"rust-analyzer", 
-                --"codelldb",
+                "rust_analyzer",
+              --  "codelldb",
             },
             automatic_installation = true, -- not the same as ensure_installed
         })
