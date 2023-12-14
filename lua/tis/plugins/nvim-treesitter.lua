@@ -12,7 +12,7 @@ return {
             local treesitter = require("nvim-treesitter.configs")
 
             -- configure treesitter
-        treesitter.setup({ -- enable syntax highlighting
+            treesitter.setup({ -- enable syntax highlighting
             highlight = {
                 enable = true,
                 additional_vim_regex_highlighting=false,
@@ -29,8 +29,6 @@ return {
             ensure_installed = {
                 "json",
                 "yaml",
-                "html",
-                "css",
                 "markdown",
                 "markdown_inline",
                 "bash",
@@ -55,6 +53,11 @@ return {
                     node_decremental = "<bs>",
                 },
             },
+            opts = function (_, opts)
+                if type(opts.ensure_installed) == table then
+                    vim.list_extend(opts.ensure_installed, {"ron", "rust", "toml"})
+                end
+            end
         })
 
       -- enable nvim-ts-context-commentstring plugin for commenting tsx and jsx

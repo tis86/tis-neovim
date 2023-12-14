@@ -28,7 +28,7 @@ return {
         -- list of servers for mason to install
             ensure_installed = {
                 "rust_analyzer",
-              --  "codelldb",
+                "codelldb",
             },
             automatic_installation = true, -- not the same as ensure_installed
         })
